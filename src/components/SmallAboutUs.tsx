@@ -1,11 +1,9 @@
 import { titan } from "@/font";
 
-export default function UpcomingEvents() {
+export default function SmallAboutUs() {
   return (
     <div>
-      <h1 className={`mb-4 text-center text-3xl font-bold ${titan.className}`}>
-        Upcoming Events
-      </h1>
+      <h1 className={`mb-4 text-3xl font-bold ${titan.className}`}>About Us</h1>
       <div>
         Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
         enim labore culpa sint ad nisi Lorem pariatur mollit ex esse

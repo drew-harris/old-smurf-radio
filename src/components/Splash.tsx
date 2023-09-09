@@ -4,9 +4,9 @@ export default function Splash() {
   return (
     <div className="text-center">
       <div
-        className={`grid w-full place-items-center py-14 text-[50px] font-bold ${titan.className}`}
+        className={`grid w-full place-items-center pt-14 text-[50px] font-bold ${titan.className}`}
       >
-        S.M.U.R.F.
+        S.M.U.R.F. Radio
       </div>
       <div className="text-2xl">Live Weekdays</div>
       <div className="text-2xl">4pm - 12am</div>
