@@ -19,6 +19,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: #1c1c1c;
+  width: 100%;
 }
 
 .debug {
