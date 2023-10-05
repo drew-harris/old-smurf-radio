@@ -10,8 +10,7 @@ export default function Splash() {
         S.M.U.R.F. Radio
       </div>
       <Embed />
-      <div className="text-2xl">Live Weekdays</div>
-      <div className="text-2xl">4pm - 12am</div>
+      <div className="text-2xl">Live Sunday-Thursday 3pm-12am</div>
     </div>
   );
 }
