@@ -24,7 +24,7 @@ function Links() {
     <nav className="flex md:justify-between items-center gap-6 overflow-scroll whitespace-nowrap">
       <Link href="/schedule">Schedule</Link>
       <Link href="/about">About</Link>
-      <Link href="/djs">DJs</Link>
+      {/* <Link href="/djs">DJs</Link> */}
       <a href="https://docs.google.com/forms/d/1PK8aNZ6NIcGpKPBOPmd4bLNuRgZjwD6Eisbsdzu2k7U/viewform?edit_requested=true">
         Sign Up
       </a>
