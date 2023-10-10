@@ -30,6 +30,7 @@ export default function Schedule() {
       <h2 className={`${titan.className} text-2xl`}>Thursday</h2>
       <ScheduleSlot name="Robin Kinagomba" time="3PM" />
       <ScheduleSlot name="Emmet Overcarsh" time="4PM" />
+      <ScheduleSlot name="Mario Roman" time="6PM" />
       <ScheduleSlot name="Sophie VanderMolen" time="8PM" />
       <ScheduleSlot name="Armin Charkhar" time="11PM" />
     </main>
