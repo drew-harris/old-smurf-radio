@@ -15,11 +15,12 @@ export default function Schedule() {
       <ScheduleSlot name="Meg Castellanos" time="5PM" />
       <ScheduleSlot name="Niara Gill" time="6PM" />
       <ScheduleSlot name="Olivia Avant" time="9PM" />
+      <ScheduleSlot name="Drew Harris" time="10PM" />
       <h2 className={`${titan.className} text-2xl`}>Tuesday</h2>
       <ScheduleSlot name="Zach Perez" time="6PM" />
       <ScheduleSlot name="Jane Strauss" time="7PM" />
       <ScheduleSlot name="Max Havens" time="8PM" />
-      <ScheduleSlot name="Drew Harris" time="9PM" />
+      {/* <ScheduleSlot name="Drew Harris" time="9PM" /> */}
       <ScheduleSlot name="Jessiah Ruiz" time="11PM" />
       <h2 className={`${titan.className} text-2xl`}>Wednesday</h2>
       <ScheduleSlot name="Sydni" time="4PM" />
