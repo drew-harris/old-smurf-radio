@@ -4,7 +4,7 @@ export default function SmallAboutUs() {
   return (
     <div>
       <h1 className={`mb-4 text-3xl font-bold ${titan.className}`}>About Us</h1>
-      <div>
+      <div className="pb-8">
         Student Managed University Radio Frequency is SMU’s college radio
         program! We were officiated in April of 2023. This program is open to
         all music and/or radio enthusiasts, and we strive to provide a community
