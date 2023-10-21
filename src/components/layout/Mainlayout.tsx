@@ -7,7 +7,7 @@ type Props = {
 
 export default function MainLayout({ children }: Props) {
   return (
-    <div className="debug w-full">
+    <div className="w-full">
       <Navbar />
       <main className="mx-auto min-h-[100vh] max-w-4xl bg-zinc-800 px-8 pt-14">
         {children}

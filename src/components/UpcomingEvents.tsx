@@ -7,10 +7,6 @@ export default function UpcomingEvents() {
         Upcoming Events
       </h1>
       <div>
-        October 5: 7:30-8:30pm Body Meeting
-        <br />
-        October 11: First Broadcast
-        <br />
         October 31: Deadline for schedule changes
         <br />
       </div>
