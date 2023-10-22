@@ -14,6 +14,7 @@ export default function Schedule() {
       <ScheduleSlot name="Tami Oluiobi" time="4PM" />
       <ScheduleSlot name="Meg Castellanos" time="5PM" />
       <ScheduleSlot name="Niara Gill" time="6PM" />
+      <ScheduleSlot name="Melanie Jackson" time="8PM" />
       <ScheduleSlot name="Olivia Avant" time="9PM" />
       <ScheduleSlot name="Drew Harris" time="10PM" />
       <h2 className={`${titan.className} text-2xl`}>Tuesday</h2>

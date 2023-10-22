@@ -44,6 +44,11 @@ export const schedule: Slot[] = [
     time: 19, // 6pm
   },
   {
+    name: "Melanie Jackson",
+    day: 1,
+    time: 20, // 8pm
+  },
+  {
     name: "Olivia Avant",
     day: 1,
     time: 21, // 9pm

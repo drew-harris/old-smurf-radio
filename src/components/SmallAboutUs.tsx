@@ -12,7 +12,7 @@ export default function SmallAboutUs() {
         proud to further that connection on campus. In the past, due to the
         monetary and technological restrictions of traditional radio
         broadcasting, SMU’s radio station was discontinued. However, S.M.U.R.F.
-        has recessitated the radio, with a modern twist, allowing for remote,
+        has resuscitated the radio, with a modern twist, allowing for remote,
         online, broadcasting and listening. Now, members can broadcast from the
         comfort of their home, and listeners can tune in anywhere, anytime. This
         allows for a broader reach, equipped to keep up with modern

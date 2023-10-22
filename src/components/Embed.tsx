@@ -3,7 +3,7 @@ export default function Embed() {
     <>
       <iframe
         src="https://smuradiofrequency.mixlr.com/embed"
-        height="300px"
+        height="200px"
         width="100%"
       ></iframe>
     </>
