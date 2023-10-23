@@ -11,6 +11,15 @@ export default function Player({ streamUrl }: PlayerProps) {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const play = () => {
+    seek();
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
+
+    setIsPlaying(true);
+  };
+
+  const seek = () => {
     // Get current time
     const now = new Date();
     const nowSeconds = now.getSeconds();
@@ -20,8 +29,6 @@ export default function Player({ streamUrl }: PlayerProps) {
     if (!audioRef || !audioRef.current) return;
 
     audioRef.current.currentTime = nowSeconds + nowMinutes * 60;
-    audioRef.current.play();
-    setIsPlaying(true);
   };
 
   const pause = () => {
@@ -36,19 +43,22 @@ export default function Player({ streamUrl }: PlayerProps) {
 
     const prevent = (e: any) => {
       e.preventDefault();
-      // const now = new Date();
-      // const nowSeconds = now.getSeconds();
-      // const nowMinutes = now.getMinutes();
-      // console.log("SKIPPING");
-      //
-      // if (audioRef.current) {
-      //   audioRef.current.currentTime = nowSeconds + nowMinutes * 60;
-      // }
-      // Seek to correct point
     };
     let listen = audioRef.current.addEventListener("seeking", prevent);
     audioRef.current.addEventListener("seeked", prevent);
-    // audioRef.current.addEventListener("timeupdate", prevent);
+    audioRef.current.addEventListener("timeupdate", (e) => {
+      const currentTime = audioRef.current?.currentTime;
+      const now = new Date();
+      const nowSeconds = now.getSeconds();
+      const nowMinutes = now.getMinutes();
+
+      const absDifference = Math.abs(
+        (currentTime || 0) - (nowSeconds + nowMinutes * 60),
+      );
+      if (absDifference > 5) {
+        seek();
+      }
+    });
 
     audioRef.current.addEventListener("play", (e) => {
       e.preventDefault();
@@ -60,11 +70,17 @@ export default function Player({ streamUrl }: PlayerProps) {
       pause();
     });
 
+    audioRef.current.addEventListener("blur", (e) => {
+      e.preventDefault();
+      pause();
+    });
+
     let localAudio = audioRef.current;
 
     return () => {
       localAudio.removeEventListener("seeking", prevent);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
