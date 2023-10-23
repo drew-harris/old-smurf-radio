@@ -36,19 +36,19 @@ export default function Player({ streamUrl }: PlayerProps) {
 
     const prevent = (e: any) => {
       e.preventDefault();
-      const now = new Date();
-      const nowSeconds = now.getSeconds();
-      const nowMinutes = now.getMinutes();
-      console.log("SKIPPING");
-
-      if (audioRef.current) {
-        audioRef.current.currentTime = nowSeconds + nowMinutes * 60;
-      }
+      // const now = new Date();
+      // const nowSeconds = now.getSeconds();
+      // const nowMinutes = now.getMinutes();
+      // console.log("SKIPPING");
+      //
+      // if (audioRef.current) {
+      //   audioRef.current.currentTime = nowSeconds + nowMinutes * 60;
+      // }
       // Seek to correct point
     };
     let listen = audioRef.current.addEventListener("seeking", prevent);
     audioRef.current.addEventListener("seeked", prevent);
-    audioRef.current.addEventListener("timeupdate", prevent);
+    // audioRef.current.addEventListener("timeupdate", prevent);
 
     audioRef.current.addEventListener("play", (e) => {
       e.preventDefault();
