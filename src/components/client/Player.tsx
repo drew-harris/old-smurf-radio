@@ -36,6 +36,8 @@ export default function Player({ streamUrl }: PlayerProps) {
 
     const prevent = (e: any) => e.preventDefault();
     let listen = audioRef.current.addEventListener("seeking", prevent);
+    audioRef.current.addEventListener("seeked", prevent);
+    audioRef.current.addEventListener("timeupdate", prevent);
 
     audioRef.current.addEventListener("play", (e) => {
       e.preventDefault();
