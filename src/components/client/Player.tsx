@@ -7,7 +7,7 @@ interface PlayerProps {
 }
 
 export default function Player({ streamUrl }: PlayerProps) {
-  const audioRef = useRef<HTMLAudioElement>(new Audio(streamUrl));
+  const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
   const play = () => {
@@ -56,6 +56,7 @@ export default function Player({ streamUrl }: PlayerProps) {
 
   return (
     <div>
+      <audio ref={audioRef} src={streamUrl} controls></audio>
       {isPlaying ? (
         <button onClick={pause}>Pause</button>
       ) : (
