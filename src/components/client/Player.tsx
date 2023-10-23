@@ -56,7 +56,7 @@ export default function Player({ streamUrl }: PlayerProps) {
 
   return (
     <div>
-      <audio ref={audioRef} src={streamUrl} controls></audio>
+      <audio ref={audioRef} src={streamUrl}></audio>
       {isPlaying ? (
         <button onClick={pause}>Pause</button>
       ) : (
