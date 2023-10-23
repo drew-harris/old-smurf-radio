@@ -70,11 +70,6 @@ export default function Player({ streamUrl }: PlayerProps) {
       pause();
     });
 
-    audioRef.current.addEventListener("blur", (e) => {
-      e.preventDefault();
-      pause();
-    });
-
     let localAudio = audioRef.current;
 
     return () => {
