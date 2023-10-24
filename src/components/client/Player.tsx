@@ -79,10 +79,11 @@ export default function Player({ streamUrl }: PlayerProps) {
   }, []);
 
   return (
-    <div>
+    <div className="flex w-min gap-8 rounded-sm bg-zinc-700 p-5">
+      <div className="rounded-xl bg-red-500 p-2 text-white">LIVE</div>
       <audio ref={audioRef} src={streamUrl}></audio>
       {isPlaying ? (
-        <button onClick={pause}>Pause</button>
+        <button onClick={pause}>Pause</Font>
       ) : (
         <button onClick={play}>Play</button>
       )}
