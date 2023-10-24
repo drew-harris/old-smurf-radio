@@ -1,5 +1,7 @@
 "use client";
 
+import { faPause, faPlay } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useRef, useState } from "react";
 
 interface PlayerProps {
@@ -79,13 +81,17 @@ export default function Player({ streamUrl }: PlayerProps) {
   }, []);
 
   return (
-    <div className="flex w-min gap-8 rounded-sm bg-zinc-700 p-5">
+    <div className="flex w-min items-center gap-8 rounded-sm bg-zinc-700 p-5">
       <div className="rounded-xl bg-red-500 p-2 text-white">LIVE</div>
       <audio ref={audioRef} src={streamUrl}></audio>
       {isPlaying ? (
-        <button onClick={pause}>Pause</Font>
+        <div onClick={pause} className="p-2">
+          <FontAwesomeIcon size="2x" icon={faPause} />
+        </div>
       ) : (
-        <button onClick={play}>Play</button>
+        <div onClick={play} className="p-2">
+          <FontAwesomeIcon size="2x" icon={faPlay} />
+        </div>
       )}
     </div>
   );
