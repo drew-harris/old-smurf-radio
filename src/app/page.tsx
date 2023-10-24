@@ -7,8 +7,6 @@ export default function Home() {
   return (
     <>
       <Splash />
-      <hr className="my-8 mt-8 border-gray-500" />
-      <NextShow />
       <hr className="my-4 mt-8 border-gray-500" />
       <UpcomingEvents />
       <hr className="my-4 mt-4 border-gray-500" />
