@@ -82,7 +82,7 @@ export default function Player({ streamUrl }: PlayerProps) {
 
   return (
     <div className="flex w-min items-center gap-8 rounded-sm bg-zinc-700 p-5">
-      <div className="rounded-xl bg-red-500 p-2 text-white">LIVE</div>
+      <div className="rounded-xl bg-zinc-500 p-2 text-white">NOT LIVE</div>
       <audio ref={audioRef} src={streamUrl}></audio>
       {isPlaying ? (
         <div onClick={pause} className="p-2">
