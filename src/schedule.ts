@@ -7,6 +7,11 @@ export type Slot = {
 export const schedule: Slot[] = [
   // SUNDAY ---------
   {
+    name: "Lucie Gray Miller",
+    day: 0,
+    time: 15, // 3pm
+  },
+  {
     name: "Dmargolis",
     day: 0,
     time: 17, // 5pm
