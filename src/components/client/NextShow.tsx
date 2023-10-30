@@ -8,7 +8,7 @@ export default function NextShow() {
   if (timezone != "America/Chicago") return null;
   const show = getNextShow();
   const time = new Date();
-  if (true) return null;
+  if (!show || !show.name) return null;
   return (
     <div>
       <h1 className={`mb-4 text-center text-3xl font-bold ${titan.className}`}>
