@@ -34,7 +34,7 @@ export const schedule: Slot[] = [
 
   // MONDAY -----------
   {
-    name: "Tami Oluiobi",
+    name: "Tami Olujobi",
     day: 1,
     time: 16, // 4pm
   },
@@ -153,7 +153,7 @@ export const schedule: Slot[] = [
     time: 20,
   },
   {
-    name: "Armin Charkhar",
+    name: "Armin Charkhkar",
     day: 4,
     time: 23,
   },
