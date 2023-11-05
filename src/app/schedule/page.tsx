@@ -11,6 +11,7 @@ export default function Schedule() {
       <ScheduleSlot name="Josh Baier" time="7PM" />
       <ScheduleSlot name="Miranda Makari" time="8PM" />
       <ScheduleSlot name="Capri Woss" time="9PM" />
+      <ScheduleSlot name="Armin Charkhkar" time="11PM" />
       <h2 className={`${titan.className} text-2xl`}>Monday</h2>
       <ScheduleSlot name="Tami Olujobi" time="4PM" />
       <ScheduleSlot name="Meg Castellanos" time="5PM" />
@@ -25,6 +26,7 @@ export default function Schedule() {
       <ScheduleSlot name="Jake Dixon" time="10PM" />
       <ScheduleSlot name="Jessiah Ruiz" time="11PM" />
       <h2 className={`${titan.className} text-2xl`}>Wednesday</h2>
+      <ScheduleSlot name="Tyler Chapman" time="4PM" />
       <ScheduleSlot name="AnnaMarie Fernandes" time="5PM" />
       <ScheduleSlot name="Jordan Naivar" time="8PM" />
       <ScheduleSlot name="Joseph Mathews" time="9PM" />
@@ -37,7 +39,6 @@ export default function Schedule() {
       <ScheduleSlot name="Mario Roman" time="6PM" />
       <ScheduleSlot name="Sydni with Bailey and Campbell" time="7PM" />
       <ScheduleSlot name="Sophie VanderMolen" time="8PM" />
-      <ScheduleSlot name="Armin Charkhkar" time="11PM" />
     </main>
   );
 }
