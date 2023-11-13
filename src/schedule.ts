@@ -22,11 +22,6 @@ export const schedule: Slot[] = [
     time: 19, // 7pm
   },
   {
-    name: "Miranda Makari",
-    day: 0,
-    time: 20, // 8pm
-  },
-  {
     name: "Capri Woss",
     day: 0,
     time: 21, // 9pm
@@ -68,8 +63,18 @@ export const schedule: Slot[] = [
     day: 1,
     time: 22, // 10pm
   },
+  {
+    name: "Luke Carter",
+    day: 1,
+    time: 23, // 11pm
+  },
 
   // TUESDAY -----------
+  {
+    name: "Miranda Makari",
+    day: 2,
+    time: 17, // 5pm
+  },
   {
     name: "Zach Perez",
     day: 2,
@@ -84,6 +89,11 @@ export const schedule: Slot[] = [
     name: "Max Havens",
     day: 2,
     time: 20, // 8pm
+  },
+  {
+    name: "Asher Ross",
+    day: 2,
+    time: 21, // 9pm
   },
   {
     name: "Jake Dixon",
