@@ -7,8 +7,11 @@ export default function UpcomingEvents() {
         Upcoming Events
       </h1>
       <div>
-        October 31: Deadline for schedule changes
+        Semester Sendoff/Full Body Meeting<br/>
+        Friday December 4 at 4pm in Huges Trigg
         <br />
+        <br />
+        Optional Broadcasts Dec 5-Jan 15
       </div>
     </div>
   );
