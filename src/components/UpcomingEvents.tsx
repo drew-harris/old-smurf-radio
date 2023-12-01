@@ -8,7 +8,7 @@ export default function UpcomingEvents() {
       </h1>
       <div>
         Semester Sendoff/Full Body Meeting<br/>
-        Friday December 4 at 4pm in Huges Trigg
+        Friday December 1 at 4pm in Huges Trigg
         <br />
         <br />
         Optional Broadcasts Dec 5-Jan 15
